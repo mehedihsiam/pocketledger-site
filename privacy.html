@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | PocketLedger</title>
+<meta name="description" content="How PocketLedger handles your data: records stay on your phone, backups are encrypted and stored in your own Google Drive.">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="40" height="40">PocketLedger</a>
+<nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main>
+<div class="wrap"><article class="doc">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 26 October 2026<br>Developer: Mehedi Hasan Siam &middot; Contact: <a href="mailto:mehedisiam0022@gmail.com">mehedisiam0022@gmail.com</a><br>App: PocketLedger for Android (package <code>com.pocketledger.app</code>)</p>
+
+<h2>The short version</h2>
+<p>PocketLedger keeps your money records <strong>on your phone</strong>. We do not run a server, we do not receive your records, and the app has no ads, analytics or trackers. If you choose to turn on Google Drive backup, an <strong>encrypted</strong> copy of your data is stored in a hidden folder of <strong>your own</strong> Google Drive, which the developer cannot open.</p>
+
+<h2>What the app stores on your phone</h2>
+<ul>
+<li>Your records: earnings, expenses, categories, quick presets, EMI plans, loans, charity donations and your settings (language, currency, theme, reminders). They are saved in a local database that only the app can read.</li>
+<li>If you turn on app lock: a salted hash of your PIN, kept in the Android Keystore through secure storage. The PIN itself is never stored. Fingerprint or face unlock is handled by Android; the app never receives your biometric data.</li>
+</ul>
+
+<h2>What leaves your phone, and only when you choose it</h2>
+<div class="table-scroll"><table>
+<tr><th>What</th><th>When</th><th>Where it goes</th></tr>
+<tr><td>Encrypted backup file (your records, scrambled with AES-256-GCM)</td><td>After you connect Google Drive, once a day and when you tap <em>Back up now</em></td><td>A hidden app-data folder in <strong>your</strong> Google Drive. It uses your Drive storage. Only this app, signed in to your Google account, can read it.</td></tr>
+<tr><td>Google account ID, name and email</td><td>When you sign in with Google</td><td>Read through Google Sign-In on your device. The ID is used to build the backup encryption key and to check that a restore uses the same account. The email is shown on the Backup screen. None of this is sent to the developer.</td></tr>
+<tr><td>Exported CSV or PDF reports</td><td>When you tap Export and pick an app to share with</td><td>The app you choose (email, Drive, messaging&hellip;).</td></tr>
+<tr><td>Feedback email</td><td>When you tap <em>Send feedback</em></td><td>Your email app opens with a message to the developer. It contains the app version, Android version, device model and app language, and <strong>no financial data</strong>. You can edit or cancel it.</td></tr>
+</table></div>
+<p>We ask Google for one permission only: access to the app's own hidden folder in your Drive (<code>drive.appdata</code>). The app cannot see your other Drive files.</p>
+
+<h2>What we do not do</h2>
+<p>We do not sell or share your data, show ads, use analytics or crash-reporting services, track your location, read your contacts or messages, or access your photos or files.</p>
+
+<h2>Notifications</h2>
+<p>Reminders (daily entry, EMI due, loan due) are created on your phone. They never contain amounts or full names, and they are hidden on the lock screen.</p>
+
+<h2>Permissions the app uses</h2>
+<p>Internet and network state (Drive backup), notifications (reminders, when you enable them), run at start-up (to restore your reminder and backup schedule), biometric unlock (when you enable it), vibration, and keeping the device awake briefly while a backup runs.</p>
+
+<h2>Your choices and deleting your data</h2>
+<ul>
+<li><strong>Turn off or disconnect backup:</strong> Settings &rarr; Backup &rarr; Disconnect. You can also delete the Drive backup there.</li>
+<li><strong>Delete everything on the phone:</strong> Settings &rarr; Erase all data (optionally also deletes the Drive backup).</li>
+<li><strong>Remove access from Google:</strong> myaccount.google.com &rarr; Security &rarr; Third-party access &rarr; PocketLedger.</li>
+<li>Uninstalling the app removes the local data. A Drive backup stays until you delete it as above.</li>
+</ul>
+
+<h2>Security</h2>
+<p>Backups are encrypted before they leave the phone. The key is derived from your Google account ID, which Google gives to the app when you sign in. That ID is stable but not secret, so the encryption protects against casual access to the file, not against someone who already knows your account ID. A passphrase option may come later.</p>
+
+<h2>Google API Services</h2>
+<p>PocketLedger's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Children</h2>
+<p>PocketLedger is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:mehedisiam0022@gmail.com">mehedisiam0022@gmail.com</a></p>
+</article></div>
+</main>
+<footer class="site"><div class="wrap">
+<div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="mailto:mehedisiam0022@gmail.com">Contact</a></div>
+<div>&copy; 2026 PocketLedger</div>
+</div></footer>
+</body>
+</html>
